@@ -27,12 +27,10 @@
 * Loop Control Structure (do –while, while, for)
 * Jump statements (break, continue)
 
-### 4: Input Fundamentals and Datatypes In Java
+### 4: Input Fundamentals and Array In Java
 
 * Java program inputs
-* Data types
 * What is Array
-* Instantiation of an Array
 
 ### 5: Object Oriented Programming
 
@@ -43,9 +41,8 @@
 
 ###  06: Inheritance
 
-* Complete concepts of Inheritance
+* Inheritance in detail
 * Sub-Classes
-* Object Classes
 
 ### 07: Access Modifiers
 
@@ -59,14 +56,8 @@
 * Constructors
 * Types of Constructor
 * Constructor Rule
-* Constructor Overloading
 
-### 09: Polymorphism
-
-* Method overloading
-* Method overriding
-
-### 10: Reference Links
+### 09: Reference Links
 
 ............................................................................................................................................................................................................................................................................................
 
@@ -387,7 +378,7 @@ for(initialization, condition, increment/decrement) {
 
 ##### while loop
 
-<img src="" width="500" height="300">
+<img src="https://github.com/AnujKumar00/Core-java/blob/main/control-flow-in-java2.png" width="500" height="300">
 
 The while loop is also used to iterate over the number of statements multiple times. However, if we don't know the number of iterations in advance, it is recommended to use a while loop. Unlike for loop, the initialization and increment/decrement doesn't take place inside the loop statement in while loop.
 ```
@@ -398,7 +389,7 @@ while(condition){
 
 ##### do-while loop
 
-<img src="" width="500" height="300">
+<img src="https://github.com/AnujKumar00/Core-java/blob/main/control-flow-in-java3.png" width="500" height="300">
 
 The do-while loop checks the condition at the end of the loop after executing the loop statements. When the number of iteration is not known and we have to execute the loop at least once, we can use do-while loop.
 
@@ -408,6 +399,420 @@ do
 //statements    
 } while (condition);
 ```
+##### Jump statements
+
+Jump statements are used to transfer the control of the program to the specific statements. In other words, jump statements transfer the execution control to the other part of the program. There are two types of jump statements in Java, i.e., break and continue.
+
+Java break statement
+
+As the name suggests, the break statement is used to break the current flow of the program and transfer the control to the next statement outside a loop or switch statement. However, it breaks only the inner loop in the case of the nested loop.
+
+Java continue statement
+
+Unlike the break statement, the continue statement doesn't break the loop, whereas, it skips the specific part of the loop and jumps to the next iteration of the loop immediately.
+
+#### 4: Input Fundamentals in Java
+
+##### Java program inputs
+
+Java Scanner class allows the user to take input from the console. It belongs to java.util package. It is used to read the input of primitive types like int, double, long, short, float, and byte. It is the easiest way to read input in Java program.
+
+```
+Scanner sc=new Scanner(System.in);
+```
+Example of integer input from user
+
+The following example allows the user to read an integer from the System.in.
+```
+import java.util.*;  
+class UserInputDemo   
+{  
+public static void main(String[] args)  
+{  
+Scanner sc= new Scanner(System.in);    //System.in is a standard input stream  
+System.out.print("Enter first number- ");  
+int a= sc.nextInt();  
+System.out.print("Enter second number- ");  
+int b= sc.nextInt();  
+System.out.print("Enter third number- ");  
+int c= sc.nextInt();  
+int d=a+b+c;  
+System.out.println("Total= " +d);  
+}  
+}  
+```
+
+##### What is Array
+
+Arrays are used to store multiple values in a single variable, instead of declaring separate variables for each value.
+
+To declare an array, define the variable type with square brackets:
+```
+int[] myNum = {10, 20, 30, 40};
+```
+#### 5: Object Oriented Programming
+
+##### Introduction to Object-Oriented
+
+Object means a real-world entity such as a pen, chair, table, computer, watch, etc. Object-Oriented Programming is a methodology or paradigm to design a program using classes and objects. It simplifies software development and maintenance by providing some concepts:
+
+1. Object
+2. Class
+3. Inheritance
+4. Polymorphism
+5. Abstraction
+6. Encapsulation
+ 
+##### Abstraction, Encapsulation, Inheritance,
+
+##### Abstraction
+
+Hiding internal details and showing functionality is known as abstraction. For example phone call, we don't know the internal processing.
+
+##### Encapsulation
+
+Binding (or wrapping) code and data together into a single unit is known as encapsulation. For example, a capsule is wrapped with different medicines.
+
+##### Inheritance
+
+When one object acquires all the properties and behaviours of a parent object, it is known as inheritance. It provides code reusability. It is used to achieve runtime polymorphism.
+
+##### Polymorphism
+
+If one task is performed in different ways, it is known as polymorphism. For example: to convince the customer differently.
+
+In Java Polymorphism is mainly divided into two types: 
+
+1. Compile-time Polymorphism
+2. Runtime Polymorphism
+
+##### 1. Compile-time Polymorphism
+
+Compile-time polymorphism is also known as static polymorphism and it is implemented by method overloading.
+
+```
+public class Main {
+  // method to add two integers
+  public int addition(int x, int y) {
+    return x + y;
+  }
+
+  // method to add three integers
+  public int addition(int x, int y, int z) {
+    return x + y + z;
+  }
+
+  // method to add two doubles
+  public double addition(double x, double y) {
+    return x + y;
+  }
+
+  // Main method
+  public static void main(String[] args) {
+    // Creating an object of the Main method
+    Main number = new Main();
+
+    // calling the overloaded methods
+    int res1 = number.addition(444, 555);
+    System.out.println("Addition of two integers: " + res1);
+
+    int res2 = number.addition(333, 444, 555);
+    System.out.println("Addition of three integers: " + res2);
+
+    double res3 = number.addition(10.15, 20.22);
+    System.out.println("Addition of two doubles: " + res3);
+  }
+}
+```
+```
+Addition of two integers: 999
+Addition of three integers: 1332
+Addition of two doubles: 30.369999999999997
+```
+
+##### 2. Runtime Polymorphism
+
+Run time polymorphism is also known as dynamic method dispatch and it is implemented by the method overriding.
+```
+// Java Example: Run Time Polymorphism
+class Vehicle {
+  public void displayInfo() {
+    System.out.println("Some vehicles are there.");
+  }
+}
+
+class Car extends Vehicle {
+  // Method overriding
+  @Override
+  public void displayInfo() {
+    System.out.println("I have a Car.");
+  }
+}
+
+class Bike extends Vehicle {
+  // Method overriding
+  @Override
+  public void displayInfo() {
+    System.out.println("I have a Bike.");
+  }
+}
+
+public class Main {
+  public static void main(String[] args) {
+    Vehicle v1 = new Car(); // Upcasting
+    Vehicle v2 = new Bike(); // Upcasting
+
+    // Calling the overridden displayInfo() method of Car class
+    v1.displayInfo();
+
+    // Calling the overridden displayInfo() method of Bike class
+    v2.displayInfo();
+  }
+}
+```
+```
+I have a Car.
+I have a Bike.
+```
+
+##### Introduction to Classes and Objects
+
+##### Classes
+
+The collection of objects is called class. It is a logical entity.
+A class can also be defined as a blueprint from which you can create an individual object.
+
+##### Objects
+
+Any entity that has a state and behaviour is known as an object. For example, a chair, pen, table, keyboard, bike, etc. It can be physical or logical.
+
+#### 06: Inheritance
+
+##### What is Inheritance
+
+Java, Inheritance is an important pillar of OOP(Object-Oriented Programming). It is the mechanism in Java by which one class is allowed to inherit the features(fields and methods) of another class.
+
+```
+class Employee{  
+ float salary=40000;  
+}  
+class Programmer extends Employee{  
+ int bonus=10000;  
+ public static void main(String args[]){  
+   Programmer p=new Programmer();  
+   System.out.println("Programmer salary is:"+p.salary);  
+   System.out.println("Bonus of Programmer is:"+p.bonus);  
+}  
+}
+```
+```
+ Programmer salary is:40000.0
+ Bonus of programmer is:10000
+```
+
+##### Sub-Classes
+
+The class that inherits from another class.
+In the example below, the Car class (subclass) inherits the attributes 
+```
+class Vehicle {
+  protected String brand = "Ford";        // Vehicle attribute
+  public void honk() {                    // Vehicle method
+    System.out.println("Tuut, tuut!");
+  }
+}
+
+class Car extends Vehicle {
+  private String modelName = "Mustang";    // Car attribute
+  public static void main(String[] args) {
+
+    // Create a myCar object
+    Car myCar = new Car();
+
+    // Call the honk() method (from the Vehicle class) on the myCar object
+    myCar.honk();
+
+    // Display the value of the brand attribute (from the Vehicle class) and the value of the modelName from the Car class
+    System.out.println(myCar.brand + " " + myCar.modelName);
+  }
+}
+```
+
+#### 07: Access Modifiers
+
+In Java, Access modifiers help to restrict the scope of a class, constructor, variable, method, or data member.
+
+##### Default – No keyword required
+
+When no access modifier is specified for a class, method, or data member – It is said to be having the default access modifier by default. The data members, classes, or methods that are not declared using any access modifiers i.e. having default access modifiers are accessible only within the same package.
+
+```
+// Java program to illustrate default modifier 
+package p1; 
+
+// Class Geek is having Default access modifier 
+class Geek 
+{ 
+    void display() 
+    { 
+        System.out.println("Hello World!"); 
+    } 
+} 
+```
+##### Private
+
+The private access modifier is specified using the keyword private. The methods or data members declared as private are accessible only within the class in which they are declared.
+```
+// Java program to illustrate error while
+// Using class from different package with
+
+// Private Modifier
+package p1;
+
+// Class A
+class A {
+    private void display()
+    {
+        System.out.println("GeeksforGeeks");
+    }
+}
+
+// Class B
+class B {
+    public static void main(String args[])
+    {
+        A obj = new A();
+        // Trying to access private method
+        // of another class
+        obj.display();
+    }
+}
+```
+
+##### Protected
+
+The protected access modifier is specified using the keyword protected.
+The methods or data members declared as protected are accessible within the same package or subclasses in different packages.
+```
+// Java Program to Illustrate
+// Protected Modifier
+package p1;
+
+// Class A
+public class A {
+    protected void display()
+    {
+        System.out.println("GeeksforGeeks");
+    }
+}
+
+```
+##### Public
+
+The public access modifier is specified using the keyword public. 
+The public access modifier has the widest scope among all other access modifiers.
+Classes, methods, or data members that are declared as public are accessible from everywhere in the program. There is no restriction on the scope of public data members.
+
+```
+// Java program to illustrate 
+// public modifier 
+package p1; 
+public class A 
+{ 
+public void display() 
+    { 
+        System.out.println("GeeksforGeeks"); 
+    } 
+} 
+```
+
+#### 08: Constructors
+
+##### Constructors
+
+In Java, a Constructor is a block of codes similar to the method. It is called when an instance of the class is created. At the time of calling the constructor, memory for the object is allocated in the memory. It is a special type of method that is used to initialize the object. Every time an object is created using the new() keyword, at least one constructor is called.
+
+##### Types of Constructors
+
+There are two types of constructors in Java:
+
+1. Default constructor (no-arg constructor)
+2. Parameterized constructor
+
+##### 1. Default constructor (no-arg constructor)
+
+A constructor is called a "Default Constructor" when it doesn't have any parameters.
+```
+//Java Program to create and call a default constructor  
+class Bike1{  
+//creating a default constructor  
+Bike1(){System.out.println("Bike is created");}  
+//main method  
+public static void main(String args[]){  
+//calling a default constructor  
+Bike1 b=new Bike1();  
+}  
+}  
+```
+```
+Bike is created
+```
+
+##### 2. Parameterized constructor
+
+A constructor which has a specific number of parameters is called a parameterized constructor.
+```
+//Java Program to demonstrate the use of the parameterized constructor.  
+class Student4{  
+    int id;  
+    String name;  
+    //creating a parameterized constructor  
+    Student4(int i,String n){  
+    id = i;  
+    name = n;  
+    }  
+    //method to display the values  
+    void display(){System.out.println(id+" "+name);}  
+   
+    public static void main(String args[]){  
+    //creating objects and passing values  
+    Student4 s1 = new Student4(111,"Karan");  
+    Student4 s2 = new Student4(222,"Aryan");  
+    //calling method to display the values of object  
+    s1.display();  
+    s2.display();  
+   }  
+}  
+```
+```
+111 Karan
+222 Aryan
+```
+
+##### Constructor's Rule
+
+There are two rules defined for the constructor.
+
+1. The constructor name must be the same as its class name
+2. A Constructor must have no explicit return type
+3. A constructor is just like a method but without return type
+
+#### 09: Reference Links
+
+* 
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
