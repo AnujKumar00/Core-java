@@ -374,9 +374,9 @@ In Java, we have three types of loops that execute similarly. However, there are
 * while loop
 * do-while loop
 
-* Java for loop
+##### Java for loop
 
-<img src="https://github.com/AnujKumar00/Core-java/blob/main/20180920213806core-java.jpg" width="500" height="300">
+<img src="https://github.com/AnujKumar00/Core-java/blob/main/control-flow-in-java.png" width="500" height="300">
 
  It enables us to initialize the loop variable, check the condition, and increment/decrement in a single line of code. We use the for loop only when we exactly know the number of times, we want to execute the block of code.
  ```
@@ -385,7 +385,9 @@ for(initialization, condition, increment/decrement) {
 }
 ```
 
- * while loop
+##### while loop
+
+<img src="" width="500" height="300">
 
 The while loop is also used to iterate over the number of statements multiple times. However, if we don't know the number of iterations in advance, it is recommended to use a while loop. Unlike for loop, the initialization and increment/decrement doesn't take place inside the loop statement in while loop.
 ```
