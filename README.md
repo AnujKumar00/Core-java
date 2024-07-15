@@ -396,7 +396,9 @@ while(condition){
 }
 ```
 
-* do-while loop
+##### do-while loop
+
+<img src="" width="500" height="300">
 
 The do-while loop checks the condition at the end of the loop after executing the loop statements. When the number of iteration is not known and we have to execute the loop at least once, we can use do-while loop.
 
