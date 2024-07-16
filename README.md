@@ -205,7 +205,7 @@ int x = 100;
 
 ##### Primitive Data Types, Range
 
-A primitive data type specifies the size and type of variable values, and it has no additional methods.
+A primitive data type is predefined data types.
 
 There are eight primitive data types in Java:
 ```
