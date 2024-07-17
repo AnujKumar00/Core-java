@@ -1,5 +1,4 @@
 # CORE JAVA
-
 <img src="https://github.com/AnujKumar00/Core-java/blob/main/20180920213806core-java.jpg" width="500" height="300">
 
 ## Table Of Content
