@@ -83,7 +83,7 @@ It is used for:
 ##### How to Install (In vscode)?
 
 Vscode is an IDE. An IDE (Integrated Development Environment) is an editor used to help us write code. Though we could write
-our Java code in a barebones text editor like Notepad, an IDE makes our lives easier by providing handy
+our Java code in a barebones text editor like vs code, an IDE makes our lives easier by providing handy
 features like auto-correction, code suggestions, debugging tools, etc.
 
 First, install VSCode by following the steps below:
@@ -130,19 +130,20 @@ Hello, World
 
 ##### Naming convention of Java language
 
-In Java, it is good practice to name classes, variables, and methods name as what they are actually supposed to do instead of naming them randomly. Below are some naming conventions of the Java programming language. They must be followed while developing software in Java for good maintenance and readability of code. Java uses CamelCase as a practice for writing names of methods, variables, classes, packages, and constants. 
+In Java, it is good practice to name classes and variables as what they are supposed to do instead of randomly naming them. Below are some naming conventions of the Java programming language. They must be followed while developing software in Java for good maintenance and readability of code. Java uses CamelCase as a practice for writing names of variables, classes and packages. 
 
 ##### Comments
 
-Comments can be used to explain Java code and to make it more readable. It can also be used to prevent execution when testing alternative code.
-There are two types of comments in java
+Comments can be used to explain Java code and to make it more readable.
+
+There are two types of comments in Java
 1. Single-line comment
 2. Multi-line comment
 
 ##### 1. Single-line comment
 Single-line comments start with two forward slashes (//).
 
-Any text between // and the end of the line is ignored by Java (will not be executed).
+Any text after // and the end of the line is ignored by Java (will not be executed).
 
 This example uses a single-line comment before a line of code:
 ```
@@ -192,7 +193,7 @@ The general rules for naming variables are:
 
 ##### Keywords
 
-Java keywords are also known as reserved words. Keywords are particular words that act as a key to a code. These are predefined words by Java so they cannot be used as a variable or object name or class name.
+Java keywords are also known as reserved words. These are predefined words by Java so they cannot be used as a variable or object name or class name.
 
 ##### Literals
 
@@ -205,7 +206,7 @@ int x = 100;
 
 ##### Primitive Data Types, Range
 
-A primitive data type is predefined data types.
+A primitive data type is a predefined data type.
 
 There are eight primitive data types in Java:
 ```
@@ -224,17 +225,16 @@ char	        2 bytes	     Stores a single character/letter or ASCII values
 
 Unlike primitive data types, these are not predefined. These are user-defined data types created by programmers. These data types are used to store multiple values.
 
-There are five types of non-primitive data types in Java. They are as follows:
+There are some types of non-primitive data types in Java. They are as follows:
 
 1. Class
 2. Object
 3. String
 4. Array
-5. Interface
 
 ##### Type Casting
 
-In Java, type casting is a method or process that converts a data type into another data type in both ways manually and automatically. The automatic conversion is done by the compiler and manual conversion is performed by the programmer.
+In Java, type casting is a method or process that converts a data type into another data type. Conversion is performed by the programmer.
 
 ##### Operators
 
@@ -268,7 +268,7 @@ Java provides three types of control flow statements.
 
 As the name suggests, decision-making statements decide which statement to execute and when
 
-There are two types of decision-making statements in Java, i.e., the If statement and the switch statement.
+There are two types of decision-making statements in Java, i.e., the "if statement" and the "switch statement".
 
 ##### If statement
 
@@ -296,16 +296,16 @@ The if-else statement is an extension to the if-statement, which uses another bl
 
 ```
 if(condition) {    
-statement 1; //executes when condition is true   
+statement 1; //executes when the condition is true   
 }  
 else{  
-statement 2; //executes when condition is false   
+statement 2; //executes when the condition is false   
 }
 ```
 
 ##### 3) if-else-if ladder:
 
-The if-else-if statement contains the if-statement followed by multiple else-if statements. In other words, we can say that it is the chain of if-else statements that create a decision tree where the program may enter in the block of code where the condition is true. 
+The if-else-if statement contains the if-statement followed by multiple else-if statements. In other words, we can say that it is the chain of if-else statements that creates a decision tree where the program may enter the block of code where the condition is true. 
 
 ```
 if(condition 1) {    
@@ -359,7 +359,7 @@ switch (expression){
 
 Loop statements are used to execute the set of instructions in a repeated order. The execution of the set of instructions depends upon a particular condition.
 
-In Java, we have three types of loops that execute similarly. However, there are differences in their syntax and condition checking time.
+In Java, we have three types of loops that execute similarly. However, there are differences in their syntax and condition-checking time.
 
 * for loop
 * while loop
@@ -380,7 +380,7 @@ for(initialization, condition, increment/decrement) {
 
 <img src="https://github.com/AnujKumar00/Core-java/blob/main/control-flow-in-java2.png" width="500" height="300">
 
-The while loop is also used to iterate over the number of statements multiple times. However, if we don't know the number of iterations in advance, it is recommended to use a while loop. Unlike for loop, the initialization and increment/decrement doesn't take place inside the loop statement in while loop.
+The while loop is also used to iterate over the number of statements multiple times. However, if we don't know the number of iterations in advance, it is recommended to use a while loop.
 ```
 while(condition){    
 //looping statements    
@@ -391,7 +391,7 @@ while(condition){
 
 <img src="https://github.com/AnujKumar00/Core-java/blob/main/control-flow-in-java3.png" width="500" height="300">
 
-The do-while loop checks the condition at the end of the loop after executing the loop statements. When the number of iteration is not known and we have to execute the loop at least once, we can use do-while loop.
+The do-while loop checks the condition at the end of the loop after executing the loop statements. When the number of iterations is not known and we have to execute the loop at least once, we can use a do-while loop.
 
 ```
 do     
@@ -405,7 +405,7 @@ Jump statements are used to transfer the control of the program to the specific 
 
 Java break statement
 
-As the name suggests, the break statement is used to break the current flow of the program and transfer the control to the next statement outside a loop or switch statement. However, it breaks only the inner loop in the case of the nested loop.
+As the name suggests, the break statement is used to break the current flow of the program and transfer the control to the next statement outside a loop. However, it breaks only the inner loop in the case of the nested loop.
 
 Java continue statement
 
@@ -415,7 +415,7 @@ Unlike the break statement, the continue statement doesn't break the loop, where
 
 ##### Java program inputs
 
-Java Scanner class allows the user to take input from the console. It belongs to java.util package. It is used to read the input of primitive types like int, double, long, short, float, and byte. It is the easiest way to read input in Java program.
+Java Scanner class allows the user to take input from the console. It belongs to java.util package.
 
 ```
 Scanner sc=new Scanner(System.in);
@@ -579,18 +579,18 @@ I have a Bike.
 
 ##### Classes
 
-The collection of objects is called class. It is a logical entity.
+The collection of objects is called class.
 A class can also be defined as a blueprint from which you can create an individual object.
 
 ##### Objects
 
-Any entity that has a state and behaviour is known as an object. For example, a chair, pen, table, keyboard, bike, etc. It can be physical or logical.
+Any entity that has a state and behaviour is known as an object. For example, a chair, pen, table, keyboard, bike, etc.
 
 #### 06: Inheritance
 
 ##### What is Inheritance
 
-Java, Inheritance is an important pillar of OOP(Object-Oriented Programming). It is the mechanism in Java by which one class is allowed to inherit the features(fields and methods) of another class.
+Java, Inheritance is an important pillar of OOP(Object-Oriented Programming). It is the mechanism in Java by which one class is allowed to inherit the features of another class.
 
 ```
 class Employee{  
@@ -644,7 +644,7 @@ In Java, Access modifiers help to restrict the scope of a class, constructor, va
 
 ##### Default – No keyword required
 
-When no access modifier is specified for a class, method, or data member – It is said to be having the default access modifier by default. The data members, classes, or methods that are not declared using any access modifiers i.e. having default access modifiers are accessible only within the same package.
+When no access modifier is specified for a class or method, – It is said to have the default access modifier by default i.e. having default access modifiers are accessible only within the same package.
 
 ```
 // Java program to illustrate default modifier 
@@ -661,10 +661,10 @@ class Geek
 ```
 ##### Private
 
-The private access modifier is specified using the keyword private. The methods or data members declared as private are accessible only within the class in which they are declared.
+The private access modifier is specified using the keyword private. The methods declared as private are accessible only within the class in which they are declared.
 ```
 // Java program to illustrate error while
-// Using class from different package with
+// Using classes from different packages with
 
 // Private Modifier
 package p1;
@@ -673,7 +673,7 @@ package p1;
 class A {
     private void display()
     {
-        System.out.println("GeeksforGeeks");
+        System.out.println("Geeks");
     }
 }
 
@@ -682,7 +682,7 @@ class B {
     public static void main(String args[])
     {
         A obj = new A();
-        // Trying to access private method
+        // Trying to access a private method
         // of another class
         obj.display();
     }
@@ -692,7 +692,7 @@ class B {
 ##### Protected
 
 The protected access modifier is specified using the keyword protected.
-The methods or data members declared as protected are accessible within the same package or subclasses in different packages.
+The methods declared as protected are accessible within the same package or subclasses in different packages.
 ```
 // Java Program to Illustrate
 // Protected Modifier
@@ -702,7 +702,7 @@ package p1;
 public class A {
     protected void display()
     {
-        System.out.println("GeeksforGeeks");
+        System.out.println("Geeks");
     }
 }
 
@@ -711,7 +711,7 @@ public class A {
 
 The public access modifier is specified using the keyword public. 
 The public access modifier has the widest scope among all other access modifiers.
-Classes, methods, or data members that are declared as public are accessible from everywhere in the program. There is no restriction on the scope of public data members.
+Classes or methods, that are declared as public are accessible from everywhere in the program. There is no restriction on the scope of public data members.
 
 ```
 // Java program to illustrate 
@@ -721,7 +721,7 @@ public class A
 { 
 public void display() 
     { 
-        System.out.println("GeeksforGeeks"); 
+        System.out.println("Geeks"); 
     } 
 } 
 ```
