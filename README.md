@@ -87,10 +87,13 @@ It is used for:
 To use Visual Studio Code (VS Code) with the Java Development Kit (JDK), you need to ensure your system meets the requirements for both VS Code and the JDK. 
 ##### Visual Studio Code System Requirements for Linux
 
-    OS: Ubuntu 14.04+, Fedora 24+, CentOS 7+
-    RAM: At least 4 GB of RAM (8 GB or more recommended)
-    Disk Space: 512 MB of free disk space (2 GB or more recommended)
-    Processor: pentium or faster processor
+OS: Ubuntu 14.04+, Fedora 24+, CentOS 7+
+
+RAM: At least 4 GB of RAM (8 GB or more recommended)
+
+Disk Space: 512 MB of free disk space (2 GB or more recommended)
+
+Processor: pentium or faster processor
 
 ##### Java Development Kit (JDK) System Requirements for Linux
 
