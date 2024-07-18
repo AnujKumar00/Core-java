@@ -102,10 +102,15 @@ To use Visual Studio Code (VS Code) with the Java Development Kit (JDK), you nee
 ##### My system configurations and software's versions  
 
    OS: Ubuntu 24.04 LTS
+   
    RAM: 8GB
+   
    Disk Space: 256 GB
+   
    Processor: 11th Gen Intel Core i3
+   
    VS Code Version: 1.91.1
+   
    JDK Version: Java 22.0.1 
 
 
