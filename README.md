@@ -5,7 +5,9 @@
 ## Table Of Content
 ### 1: Introduction
 * What is Java?
-* How to Install.
+* System Requirements
+* My system configurations and software's versions 
+* How to Install
 * A Simple Java Program
 
 ### 2: Fundamentals of Java Programming
@@ -79,6 +81,33 @@ It is used for:
 * Games
 
 * Database connection
+
+##### System Requirements
+
+To use Visual Studio Code (VS Code) with the Java Development Kit (JDK), you need to ensure your system meets the requirements for both VS Code and the JDK. 
+##### Visual Studio Code System Requirements for Linux
+
+    OS: Ubuntu 14.04+, Fedora 24+, CentOS 7+
+    RAM: At least 4 GB of RAM (8 GB or more recommended)
+    Disk Space: 512 MB of free disk space (2 GB or more recommended)
+    Processor: pentium or faster processor
+
+##### Java Development Kit (JDK) System Requirements for Linux
+
+    OS: Ubuntu 14.04+ or above
+    RAM: At least 1 GB (4 GB or more recommended)
+    Disk Space: 200 MB of free disk space for JDK installation
+    Processor: Any modern Linux-compatible processor
+
+##### My system configurations and software's versions  
+
+   OS: Ubuntu 24.04 LTS
+   RAM: 8GB
+   Disk Space: 256 GB
+   Processor: 11th Gen Intel Core i3
+   VS Code Version: 1.91.1
+   JDK Version: Java 22.0.1 
+
 
 ##### How to Install (In vscode)?
 
