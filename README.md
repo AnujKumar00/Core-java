@@ -325,16 +325,38 @@ In Java, there are four types of if-statements given below.
 It is the most basic statement among all control flow statements in Java. It evaluates a Boolean expression and enables the program to enter a block of code if the expression is true.
 
 ```
+Syntax:
 if(condition) {    
 statement 1; //executes when the condition is true   
 }    
 ```
+```
+Example:
+public class Main {
+    public static void main(String[] args) {
+        int number = 10;
+
+        // if statement
+        if (number > 0) {
+            System.out.println("The number is positive.");
+        }
+    }
+}
+```
+
+##### Output
+```
+The number is positive.
+```
+
+
 
 ##### 2) if-else statement
 
 The if-else statement is an extension to the if-statement, which uses another block of code, i.e., else block. The else block is executed if the condition of the if-block is evaluated as false.
 
 ```
+Syntax:
 if(condition) {    
 statement 1; //executes when the condition is true   
 }  
@@ -342,12 +364,32 @@ else{
 statement 2; //executes when the condition is false   
 }
 ```
+```
+Example:
+public class Main {
+    public static void main(String[] args) {
+        int number = -5;
+
+        // if-else statement
+        if (number > 0) {
+            System.out.println("The number is positive.");
+        } else {
+            System.out.println("The number is not positive.");
+        }
+    }
+}
+```
+##### Output
+```
+The number is not positive.
+```
 
 ##### 3) if-else-if ladder:
 
 The if-else-if statement contains the if-statement followed by multiple else-if statements. In other words, we can say that it is the chain of if-else statements that creates a decision tree where the program may enter the block of code where the condition is true. 
 
 ```
+Syntax:
 if(condition 1) {    
 statement 1; //executes when condition 1 is true   
 }  
@@ -358,6 +400,27 @@ else {
 statement 2; //executes when all the conditions are false   
 }
 ```
+```
+Example:
+public class Main {
+    public static void main(String[] args) {
+        int number = 0;
+
+        // if-else-if ladder
+        if (number > 0) {
+            System.out.println("The number is positive.");
+        } else if (number < 0) {
+            System.out.println("The number is negative.");
+        } else {
+            System.out.println("The number is zero.");
+        }
+    }
+}
+```
+##### Output
+```
+The number is Zero.
+```
 
 ##### 4) Nested if-statement
 
@@ -366,6 +429,7 @@ In nested if-statements, the if statement can contain a if or if-else statement 
 Syntax of Nested if-statement is given below.
 
 ```
+Syntax:
 if(condition 1) {    
 statement 1; //executes when condition 1 is true   
 if(condition 2) {  
@@ -376,10 +440,38 @@ statement 2; //executes when condition 2 is false
 }  
 }
 ```
+```
+Example:
+public class Main {
+    public static void main(String[] args) {
+        int number = 10;
+
+        // Nested if statement
+        if (number > 0) {
+            System.out.println("The number is positive.");
+
+            if (number % 2 == 0) {
+                System.out.println("The number is even.");
+            } else {
+                System.out.println("The number is odd.");
+            }
+        } else {
+            System.out.println("The number is not positive.");
+        }
+    }
+}
+```
+##### Output
+```
+The number is positive.
+The number is even.
+```
+
 ##### Switch statement
 
 In Java, Switch statements are similar to if-else-if statements. The switch statement contains multiple blocks of code called cases and a single case is executed based on the variable which is being switched.
 ```
+Syntax:
 switch (expression){  
     case value1:  
      statement1;  
@@ -393,6 +485,46 @@ switch (expression){
     default:  
      default statement;  
 }
+```
+```
+Example:
+public class Main {
+    public static void main(String[] args) {
+        int day = 3;
+        
+        // Switch statement
+        switch (day) {
+            case 1:
+                System.out.println("Monday");
+                break;
+            case 2:
+                System.out.println("Tuesday");
+                break;
+            case 3:
+                System.out.println("Wednesday");
+                break;
+            case 4:
+                System.out.println("Thursday");
+                break;
+            case 5:
+                System.out.println("Friday");
+                break;
+            case 6:
+                System.out.println("Saturday");
+                break;
+            case 7:
+                System.out.println("Sunday");
+                break;
+            default:
+                System.out.println("Invalid day");
+                break;
+        }
+    }
+}
+```
+##### Output
+```
+Wednesday
 ```
 
 ##### Loop Control Structure
@@ -411,9 +543,29 @@ In Java, we have three types of loops that execute similarly. However, there are
 
  It enables us to initialize the loop variable, check the condition, and increment/decrement in a single line of code. We use the for loop only when we exactly know the number of times, we want to execute the block of code.
  ```
+Syntax:
 for(initialization, condition, increment/decrement) {    
 //block of statements    
 }
+```
+```
+Example:
+public class Main {
+    public static void main(String[] args) {
+        // For loop to print numbers from 1 to 5
+        for (int i = 1; i <= 5; i++) {
+            System.out.println("Number: " + i);
+        }
+    }
+}
+```
+##### Output
+```
+Number: 1
+Number: 2
+Number: 3
+Number: 4
+Number: 5
 ```
 
 ##### while loop
@@ -422,9 +574,32 @@ for(initialization, condition, increment/decrement) {
 
 The while loop is also used to iterate over the number of statements multiple times. However, if we don't know the number of iterations in advance, it is recommended to use a while loop.
 ```
+Syntax:
 while(condition){    
 //looping statements    
 }
+```
+```
+Example:
+public class Main {
+    public static void main(String[] args) {
+        int i = 1; // Initialization
+
+        // While loop to print numbers from 1 to 5
+        while (i <= 5) {
+            System.out.println("Number: " + i);
+            i++; // Increment
+        }
+    }
+}
+```
+##### Output
+```
+Number: 1
+Number: 2
+Number: 3
+Number: 4
+Number: 5
 ```
 
 ##### do-while loop
@@ -434,10 +609,34 @@ while(condition){
 The do-while loop checks the condition at the end of the loop after executing the loop statements. When the number of iterations is not known and we have to execute the loop at least once, we can use a do-while loop.
 
 ```
+Syntax:
 do     
 {    
 //statements    
 } while (condition);
+```
+```
+Example:
+public class Main {
+    public static void main(String[] args) {
+        int i = 1; // Initialization
+
+        // Do-while loop to print numbers from 1 to 5
+        do {
+            System.out.println("Number: " + i);
+            i++; // Increment
+        } while (i <= 5);
+    }
+}
+```
+##### Output
+```
+Number: 1
+Number: 2
+Number: 3
+Number: 4
+Number: 5
+
 ```
 ##### Jump statements
 
@@ -496,12 +695,24 @@ int[] myNum = {10, 20, 30, 40};
 
 Object means a real-world entity such as a pen, chair, table, computer, watch, etc. Object-Oriented Programming is a methodology or paradigm to design a program using classes and objects. It simplifies software development and maintenance by providing some concepts:
 
-1. Object
-2. Class
+1. Class
+2. Object
 3. Inheritance
 4. Polymorphism
 5. Abstraction
 6. Encapsulation
+
+
+##### Introduction to Classes and Objects
+
+##### Classes
+
+The collection of objects is called class.
+A class can also be defined as a blueprint from which you can create an individual object.
+
+##### Objects
+
+Any entity that has a state and behaviour is known as an object. For example, a chair, pen, table, keyboard, bike, etc.
  
 ##### Abstraction, Encapsulation, Inheritance,
 
@@ -614,17 +825,6 @@ public class Main {
 I have a Car.
 I have a Bike.
 ```
-
-##### Introduction to Classes and Objects
-
-##### Classes
-
-The collection of objects is called class.
-A class can also be defined as a blueprint from which you can create an individual object.
-
-##### Objects
-
-Any entity that has a state and behaviour is known as an object. For example, a chair, pen, table, keyboard, bike, etc.
 
 #### 06: Inheritance
 
