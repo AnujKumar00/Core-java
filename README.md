@@ -689,6 +689,22 @@ To declare an array, define the variable type with square brackets:
 ```
 int[] myNum = {10, 20, 30, 40};
 ```
+
+##### Printing Array Elements:
+```
+for (int i = 0; i < numbers.length; i++) {
+    System.out.println("Element at index " + i + ": " + numbers[i]);
+}
+```
+##### Output
+```
+Element at index 0: 1
+Element at index 1: 2
+Element at index 2: 3
+Element at index 3: 4
+Element at index 4: 5
+```
+
 #### 5: Object Oriented Programming
 
 ##### Introduction to Object-Oriented
