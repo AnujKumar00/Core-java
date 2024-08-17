@@ -1051,7 +1051,6 @@ There are two rules defined for the constructor.
 
 1. The constructor name must be the same as its class name
 2. A Constructor must have no explicit return type
-3. A constructor is just like a method but without a return type
 
 #### 09: Reference Links
 
